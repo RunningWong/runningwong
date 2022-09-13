@@ -40,7 +40,7 @@
         height: 100vh;
     }
 
-	* {box-sizing: border-box;}
+* {box-sizing: border-box;}
 
 .img-magnifier-container {
   position: relative;
@@ -55,8 +55,9 @@
   width: 200px;
   height: 200px;
 }
-	</style>
+</style>
   </head>
+	
   <body>
 	<div class="scene">
   		<div class="card">
@@ -66,15 +67,13 @@
 	</div>
 
 	
-
-	
     <script>
 	    var card = document.querySelector('.card');
 		card.addEventListener( 'click', function() {
  			card.classList.toggle('is-flipped');
 		});
 
-		function magnify(imgID, zoom) {
+  function magnify(imgID, zoom) {
   var img, glass, w, h, bw;
   img = document.getElementById(imgID);
 
@@ -134,11 +133,10 @@
     return {x : x, y : y};
   }
 }
-	</script>
-	<script>
-		/* Execute the magnify function: */
+	    /* Execute the magnify function: */
 		magnify("myimage", 1.5);
 		/* Specify the id of the image, and the strength of the magnifier glass: */
-		</script>
+	</script>
+	
   </body>
 </html>
